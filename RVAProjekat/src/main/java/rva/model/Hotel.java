@@ -25,8 +25,8 @@ public class Hotel implements Serializable {
 	 @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "HOTEL_ID_GENERATOR")
     private long id;
 	private String naziv;
-	private boolean placeno;
-	private Date datum_realizacije;
+	private  int brojZvezdica;
+	private String opis;
 	
 	
 	@ManyToOne
@@ -56,21 +56,23 @@ public class Hotel implements Serializable {
 		this.naziv = naziv;
 	}
 
-	public boolean isPlaceno() {
-		return placeno;
+	public int getBrojZvezdica() {
+		return brojZvezdica;
 	}
 
-	public void setPlaceno(boolean placeno) {
-		this.placeno = placeno;
+	public void setBrojZvezdica(int brojZvezdica) {
+		this.brojZvezdica = brojZvezdica;
 	}
 
-	public Date getDatum_realizacije() {
-		return datum_realizacije;
+	public String getOpis() {
+		return opis;
 	}
 
-	public void setDatum_realizacije(Date datum_realizacije) {
-		this.datum_realizacije = datum_realizacije;
+	public void setOpis(String opis) {
+		this.opis = opis;
 	}
+
+	
 	
 	
 
