@@ -1,7 +1,3 @@
-select * from Hotel;
-select * from Turisticka_agencija;
-select * from Destinacija;
-select * from Aranzman;
 
 
 		
@@ -15,7 +11,7 @@ insert into Turisticka_agencija(id, adresa, kontakt, naziv)
 values (nextval('Turisticka_agencija_SEQ'), 'Mike Antica 7','063259781', 'Sunce');
 
 insert into Turisticka_agencija(id, adresa, kontakt, naziv)
-values (nextval('Turisticka_agencija_SEQ'), 'Desanske Maksimovic 3', '068259364', 'Maestral');
+values (nextval('Turisticka_agencija_SEQ'), 'Desanske Maksimovic 3', '068259364', 'Maestral'); 
 
 insert into Turisticka_agencija(id, adresa, kontakt, naziv)
 values (nextval('Turisticka_agencija_SEQ'), 'Kosovska 8', '061258693', 'Go2');
