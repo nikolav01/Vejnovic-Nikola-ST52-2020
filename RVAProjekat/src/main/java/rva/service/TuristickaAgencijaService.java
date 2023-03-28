@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import rva.model.Turisticka_agencija;
+import rva.model.TuristickaAgencija;
 import rva.repository.TuristickaAgencijaRepository;
 
 @Service
@@ -15,21 +15,21 @@ public class TuristickaAgencijaService {
 	@Autowired
 	private TuristickaAgencijaRepository repo;
 	
-	public List<Turisticka_agencija> findAll() {
+	public List<TuristickaAgencija> findAll() {
 		
 		return repo.findAll();
 	}
 	
-	public Optional<Turisticka_agencija> findById(long id) {
+	public Optional<TuristickaAgencija> findById(long id) {
 		return repo.findById(id);
 	}
 	
-	public Optional<List<Turisticka_agencija>> findByNaziv (String naziv) {
-		Optional<List<Turisticka_agencija>> lista = Optional.of(repo.findByNazivContainingIgnoreCase(naziv));
+	public Optional<List<TuristickaAgencija>> findByNaziv (String naziv) {
+		Optional<List<TuristickaAgencija>> lista = Optional.of(repo.findByNazivContainingIgnoreCase(naziv));
 		return lista;
 	}
 	
-	public Turisticka_agencija save (Turisticka_agencija turistickaAgencija) {
+	public TuristickaAgencija save (TuristickaAgencija turistickaAgencija) {
 		return repo.save(turistickaAgencija);
 	}
 		

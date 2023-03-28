@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import rva.model.Turisticka_agencija;
+import rva.model.TuristickaAgencija;
 
-public interface TuristickaAgencijaRepository extends JpaRepository<Turisticka_agencija, Long> {
+public interface TuristickaAgencijaRepository extends JpaRepository<TuristickaAgencija, Long> {
 	
-	List<Turisticka_agencija> findByNazivContainingIgnoreCase(String naziv);
+	List<TuristickaAgencija> findByNazivContainingIgnoreCase(String naziv);
 
 }

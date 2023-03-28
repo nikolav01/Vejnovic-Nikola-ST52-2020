@@ -32,7 +32,7 @@ public class Aranzman implements Serializable {
 	
 	@ManyToOne
 	@JoinColumn(name = "agencija")
-	private Turisticka_agencija agencija;
+	private TuristickaAgencija agencija;
 	
 	
 	public Aranzman() {

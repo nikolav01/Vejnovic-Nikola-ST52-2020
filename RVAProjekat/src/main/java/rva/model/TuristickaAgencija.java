@@ -14,7 +14,7 @@ import jakarta.persistence.SequenceGenerator;
 
 @Entity
 
-public class Turisticka_agencija implements Serializable
+public class TuristickaAgencija implements Serializable
 {
 	/**
 	 * 
@@ -34,7 +34,7 @@ public class Turisticka_agencija implements Serializable
 	@OneToMany(mappedBy = "agencija")
 	private List <Aranzman> aranzman;  
 	
-	public  Turisticka_agencija() {
+	public  TuristickaAgencija() {
 		
 	}
 	

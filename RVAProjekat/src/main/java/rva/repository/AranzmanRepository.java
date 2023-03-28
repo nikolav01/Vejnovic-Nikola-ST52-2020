@@ -2,6 +2,8 @@ package rva.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AranzmanRepository extends JpaRepository<AranzmanRepository, Long>  {
+import rva.model.Aranzman;
+
+public interface AranzmanRepository extends JpaRepository<Aranzman, Long>  {
 
 }
